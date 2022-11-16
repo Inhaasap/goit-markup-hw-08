@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Web Studio Final
+# goit-markup-hw-06
+Web Studio 6

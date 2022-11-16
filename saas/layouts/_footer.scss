@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--accent-bg-color);
+  padding: 60px 0;
+}
+
+.logo-footer {
+  color: var(--accent-color);
+  font-family: var(--secondary-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+
+.logo-part-footer {
+  color: var(--primary-bg-color);
+}
+
+.footer-address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-list-link {
+  color: var(--primary-bg-color);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-links {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+  color: var(--accent-color);
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.left-col {
+  margin-right: 70px;
+}
+
+.footer-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-active-color);
+}
+
+.foot {
+  color: var(--primary-bg-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.right-col {
+  margin-right: auto;
+}
+
+.sub-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.sub-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.sub-input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+}
+
+.sub-button {
+  display: flex;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-bg-color);
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+      background-color: var(--accent-active-color);
+    }
+}
+
+.sub-text {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.sub-icon {
+  fill: currentColor;
+}
