@@ -268,6 +268,13 @@ body {
     line-height: 1.1666666667;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: center;
+  }
+}
 
 .contact__icon {
   fill: currentColor;
@@ -276,6 +283,11 @@ body {
 @media screen and (min-width: 768px) {
   .contact__icon {
     margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
   }
 }
 
@@ -737,6 +749,11 @@ body {
   background-color: var(--accent-bg-color);
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-height: 251px;
+  }
+}
 
 .logo-footer {
   color: var(--accent-color);
@@ -745,6 +762,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   margin-bottom: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    margin-bottom: 20px;
+  }
 }
 
 .logo-part-footer {
@@ -784,16 +806,30 @@ body {
 .footer-wrap {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .tablet-wrap {
     display: flex;
-    gap: 165px;
   }
 }
 
 .left-col {
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .left-col {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .left-col {
+    margin-right: 65px;
+  }
 }
 
 .footer-title {
@@ -802,6 +838,11 @@ body {
   line-height: 1.1428571429;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-top: 12px;
+  }
 }
 
 .team-soc-link:hover,
@@ -817,6 +858,17 @@ body {
 .right-col {
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .right-col {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-form {
+    display: flex;
+  }
+}
 
 .sub-title {
   color: var(--primary-bg-color);
@@ -825,6 +877,12 @@ body {
   text-transform: uppercase;
   margin-top: 60px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .sub-title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 .sub-input {
@@ -839,11 +897,20 @@ body {
   background-color: transparent;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .sub-input {
+    margin-right: 12px;
+  }
+}
 
 .sub-button {
   display: flex;
   align-items: center;
-  padding: 10px 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 31px;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   background: var(--accent-color);
@@ -855,6 +922,12 @@ body {
 }
 .sub-button:hover, .sub-button:focus {
   background-color: var(--accent-active-color);
+}
+@media screen and (min-width: 1200px) {
+  .sub-button {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 
 .sub-text {

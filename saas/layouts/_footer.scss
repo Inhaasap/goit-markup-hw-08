@@ -1,6 +1,10 @@
 .footer {
   background-color: var(--accent-bg-color);
   padding: 60px 0;
+
+  @include desktop {
+    max-height: 251px;
+    }
 }
 
 .logo-footer {
@@ -10,7 +14,10 @@
   font-size: 26px;
   line-height: 1.19;
   margin-bottom: 28px;
-  // margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 20px;
+  }
 }
 
 .logo-part-footer {
@@ -20,7 +27,7 @@
 .footer-address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 60px;// 
 }
 
 .footer-list-item:not(:last-child) {
@@ -48,25 +55,32 @@
 }
 
 .footer-wrap {
-
   text-align: center;
 
-  // display: flex;
-  // align-items: baseline;
-}
+    @include desktop {
+        display: flex;
+        // align-items: baseline;
+      }
+    }
 
 .tablet-wrap {
-
   @include tablet {
-  display: flex;
-  gap: 165px;
-}
+    display: flex;
+    
+  }
 }
 
 .left-col {
   margin-right: auto;
-  // margin-right: 70px;
-}  
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include desktop {
+    margin-right: 65px;
+  }
+}
 
 .footer-title {
   color: var(--primary-bg-color);
@@ -74,6 +88,10 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @include desktop {
+      margin-top: 12px;
+    }
 }
 
 .team-soc-link:hover,
@@ -88,26 +106,36 @@
 
 .right-col {
   margin-right: auto;
+
+  @include desktop {
+  margin-right: 70px;
+}
 }
 
 .sub-form {
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: flex-end;
+  @include desktop {
+    display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-end;
+  }
 }
 
-.sub-title {
-  color: var(--primary-bg-color);
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
 
+  .sub-title {
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    @include desktop {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  }
 
 .sub-input {
-  // margin-right: 12px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -118,18 +146,23 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   margin-bottom: 20px;
+
+  @include desktop {
+    margin-right: 12px;
+  }
 }
 
 .sub-button {
   display: flex;
   align-items: center;
-  padding: 10px 31px;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 31px;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
-  
-  // padding-left: 28px;
-  // padding-right: 28px;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -142,8 +175,12 @@
   &:focus {
     background-color: var(--accent-active-color);
   }
-}
 
+  @include desktop {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
 .sub-text {
   margin-right: 10px;
 
