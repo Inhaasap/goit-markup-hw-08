@@ -1,5 +1,10 @@
 .work {
   padding-top: 0;
+  display: none;
+
+  @include desktop {
+      display: flex;
+    }
 }
 
 .work__title {
@@ -13,6 +18,7 @@
 
 .work__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 

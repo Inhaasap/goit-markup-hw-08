@@ -10,17 +10,28 @@
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .features__item {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+
   &:not(:last-child) {
     margin-right: 0;
   }
 
   &::before {
     display: block;
-    content: "";
+    content: '';
     height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
