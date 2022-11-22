@@ -45,7 +45,7 @@
 }
 
 .mob-menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 0px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -63,6 +63,10 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  &.current {
+      color: var(--accent-color);
+    }
 }
 
 .mob-contact__item:not(:last-child) {
@@ -100,7 +104,10 @@
 }
 
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
 }
 
 .mob-soc__link {

@@ -64,8 +64,11 @@
     }
 
 .tablet-wrap {
+
   @include tablet {
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
     
   }
 }
@@ -78,7 +81,7 @@
   }
 
   @include desktop {
-    margin-right: 65px;
+    margin-right: 94px;
   }
 }
 
@@ -108,13 +111,14 @@
   margin-right: auto;
 
   @include desktop {
-  margin-right: 70px;
+  margin-right: 94px;
 }
 }
 
 .sub-form {
   @include desktop {
     display: flex;
+    margin: 0 ;
     // justify-content: flex-start;
     // align-items: flex-end;
   }
@@ -136,7 +140,7 @@
   }
 
 .sub-input {
-  width: 358px;
+  
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -147,8 +151,14 @@
   background-color: transparent;
   margin-bottom: 20px;
 
+  @media screen and (max-width: 1199px) {
+  width: 100%;
+  max-width: 450px;
+  }
+
   @include desktop {
     margin-right: 12px;
+    width: 358px;
   }
 }
 

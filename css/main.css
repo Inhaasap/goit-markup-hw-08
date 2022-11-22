@@ -148,6 +148,12 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .flex {
@@ -241,14 +247,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .contact {
-    display: inline-block;
+    display: block;
     margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact {
-    margin-left: auto;
     display: flex;
+    margin-left: auto;
     gap: 50px;
   }
 }
@@ -266,10 +272,12 @@ body {
   .contact__link {
     font-size: 12px;
     line-height: 1.1666666667;
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact__link {
+    display: flex;
     font-size: 14px;
     line-height: 1.14;
     align-items: center;
@@ -333,7 +341,7 @@ body {
 }
 
 .mob-menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 0px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -348,6 +356,9 @@ body {
   color: var(--color-text-primary);
 }
 .mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-color);
+}
+.mob-menu__link.current {
   color: var(--accent-color);
 }
 
@@ -384,7 +395,9 @@ body {
 }
 
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-soc__link {
@@ -458,7 +471,7 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
@@ -490,6 +503,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features-list {
@@ -608,10 +626,22 @@ body {
 .team__title {
   color: var(--color-text-primary);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team__list {
@@ -689,16 +719,38 @@ body {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__title {
   color: var(--color-text-primary);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients__list {
@@ -815,6 +867,8 @@ body {
 @media screen and (min-width: 768px) {
   .tablet-wrap {
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -828,7 +882,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .left-col {
-    margin-right: 65px;
+    margin-right: 94px;
   }
 }
 
@@ -860,13 +914,14 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .right-col {
-    margin-right: 70px;
+    margin-right: 94px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .sub-form {
     display: flex;
+    margin: 0;
   }
 }
 
@@ -886,7 +941,6 @@ body {
 }
 
 .sub-input {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -897,9 +951,16 @@ body {
   background-color: transparent;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .sub-input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sub-input {
     margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -952,8 +1013,7 @@ body {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  overflow: scroll;
   background-color: var(--primary-bg-color);
   border-radius: 5px;
   position: absolute;
@@ -966,6 +1026,14 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
   border-radius: 50%;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+  }
 }
 
 .modal-close {
