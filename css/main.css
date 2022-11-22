@@ -118,6 +118,8 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -248,7 +250,6 @@ body {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
-    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -631,7 +632,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team__title {
     font-size: 28px;
     line-height: 1.1785714286;
@@ -878,6 +879,7 @@ body {
 @media screen and (min-width: 768px) {
   .left-col {
     text-align: center;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -911,6 +913,11 @@ body {
 
 .right-col {
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .right-col {
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .right-col {
@@ -1274,8 +1281,12 @@ body {
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+  }
 }
 
 .card__list {

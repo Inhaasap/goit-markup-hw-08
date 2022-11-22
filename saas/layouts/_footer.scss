@@ -4,7 +4,7 @@
 
   @include desktop {
     max-height: 251px;
-    }
+  }
 }
 
 .logo-footer {
@@ -27,7 +27,7 @@
 .footer-address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;// 
+  margin-bottom: 60px; //
 }
 
 .footer-list-item:not(:last-child) {
@@ -57,19 +57,16 @@
 .footer-wrap {
   text-align: center;
 
-    @include desktop {
-        display: flex;
-        // align-items: baseline;
-      }
-    }
+  @include desktop {
+    display: flex;
+  }
+}
 
 .tablet-wrap {
-
   @include tablet {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    
   }
 }
 
@@ -78,6 +75,7 @@
 
   @include tablet {
     text-align: center;
+    margin-right: 0;
   }
 
   @include desktop {
@@ -93,8 +91,8 @@
   margin-bottom: 20px;
 
   @include desktop {
-      margin-top: 12px;
-    }
+    margin-top: 12px;
+  }
 }
 
 .team-soc-link:hover,
@@ -110,37 +108,37 @@
 .right-col {
   margin-right: auto;
 
+  @include tablet {
+      margin-right: 0;
+    }
+
   @include desktop {
-  margin-right: 94px;
-}
+    margin-right: 94px;
+  }
 }
 
 .sub-form {
   @include desktop {
     display: flex;
-    margin: 0 ;
-    // justify-content: flex-start;
-    // align-items: flex-end;
+    margin: 0;
   }
 }
 
+.sub-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
 
-  .sub-title {
-    color: var(--primary-bg-color);
-    font-weight: 700;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
-    margin-top: 60px;
-    margin-bottom: 20px;
-
-    @include desktop {
+  @include desktop {
     margin-top: 12px;
     margin-bottom: 20px;
   }
-  }
+}
 
 .sub-input {
-  
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -152,8 +150,8 @@
   margin-bottom: 20px;
 
   @media screen and (max-width: 1199px) {
-  width: 100%;
-  max-width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 
   @include desktop {

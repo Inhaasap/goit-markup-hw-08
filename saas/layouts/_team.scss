@@ -10,15 +10,15 @@
   text-align: center;
   margin-bottom: 50px;
 
-  @include desktop {
-  font-size: 28px;
-    line-height: calc(33/28);
+  @include tablet {
+    font-size: 28px;
+    line-height: calc(33 / 28);
   }
 
   @include desktop {
     font-size: 36px;
     line-height: 1.17;
-}
+  }
 }
 
 .team__list {
@@ -47,7 +47,6 @@
 .team__container {
   text-align: center;
   padding: 30px 0;
-
 }
 
 .team__undertitle {
@@ -74,7 +73,6 @@
 .social__item {
   width: 44px;
   height: 44px;
-
 }
 
 .social__link {

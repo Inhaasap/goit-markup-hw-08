@@ -35,8 +35,11 @@
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px;
+
+  @include tablet {
+  justify-content: center;
+    }
 }
 
 .card__list {

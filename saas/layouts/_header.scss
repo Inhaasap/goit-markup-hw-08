@@ -3,8 +3,8 @@
   height: 60px;
 
   @include tablet {
-  height: 80px;
-}
+    height: 80px;
+  }
 }
 
 .flex {
@@ -27,30 +27,28 @@
 
 .menu__list {
   display: none;
-  
 
   @include tablet {
-        display: flex;
-        margin-left: 88px;
-        gap: 50px;
-      }
+    display: flex;
+    margin-left: 88px;
+    gap: 50px;
+  }
 
-  
   @include desktop {
-        display: flex;
-        margin-left: 93px;
-        gap: 50px;
-      }
-    }
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+  }
+}
 
 .menu__item {
   @include tablet {
-      padding: 4px;
+    padding: 4px;
   }
-        
+
   @include desktop {
-  padding-top: 32px;
-  padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   &:not(:last-child) {
@@ -79,7 +77,7 @@
   }
 
   &.current::after {
-    content: '';
+    content: "";
 
     position: absolute;
     left: 0;
@@ -106,18 +104,16 @@
   display: none;
 
   @include tablet {
-      display: block;
-      margin-left: 96px;
-    }
-  
-  
-    @include desktop {
-      display: flex;
-      margin-left: auto;
-      gap: 50px;
-    }
-}
+    display: block;
+    // margin-right: 15px;
+  }
 
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+}
 
 .contact__link {
   color: var(--color-text-secondary);
@@ -133,28 +129,27 @@
 
   @include tablet {
     font-size: 12px;
-    line-height: calc(14/12);
-      margin-right: 15px;
-    }
-    
+    line-height: calc(14 / 12);
+    margin-right: 15px;
+  }
 
   @include desktop {
     display: flex;
     font-size: 14px;
     line-height: 1.14;
     align-items: center;
-}
+  }
 }
 
 .contact__icon {
   fill: currentColor;
   transform: translateY(-20%);
-  
+
   @include tablet {
-      margin-right: 8px;
-    }
+    margin-right: 8px;
+  }
 
   @include desktop {
-      margin-right: 10px;
-}
+    margin-right: 10px;
+  }
 }

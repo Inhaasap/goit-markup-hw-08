@@ -27,7 +27,7 @@
   padding-top: 21px;
   padding-bottom: 21px;
 
-  >.container {
+  > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -65,8 +65,8 @@
   }
 
   &.current {
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
 
 .mob-contact__item:not(:last-child) {
@@ -106,8 +106,7 @@
 .mob-soc__item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-soc__link {
