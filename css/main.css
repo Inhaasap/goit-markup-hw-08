@@ -118,8 +118,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -196,7 +194,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .menu__item {
-    padding: 4px;
+    padding: 8px 8px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -250,6 +248,7 @@ body {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -708,7 +707,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link:hover {
   background-color: var(--accent-color);

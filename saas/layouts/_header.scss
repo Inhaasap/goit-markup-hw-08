@@ -43,7 +43,7 @@
 
 .menu__item {
   @include tablet {
-    padding: 4px;
+    padding: 8px 8px;
   }
 
   @include desktop {
@@ -105,7 +105,7 @@
 
   @include tablet {
     display: block;
-    // margin-right: 15px;
+    margin-right: 0;
   }
 
   @include desktop {
