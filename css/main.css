@@ -149,6 +149,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
   height: 60px;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -192,11 +193,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu__item {
-    padding: 8px 8px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .menu__item {
     padding-top: 32px;
@@ -249,6 +245,7 @@ body {
   .contact {
     display: block;
     margin-right: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -270,9 +267,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .contact__link {
+    display: flex;
     font-size: 12px;
     line-height: 1.1666666667;
     margin-right: 15px;
+    align-items: center;
+  }
+  .contact__link:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -286,7 +288,6 @@ body {
 
 .contact__icon {
   fill: currentColor;
-  transform: translateY(-20%);
 }
 @media screen and (min-width: 768px) {
   .contact__icon {
@@ -391,7 +392,8 @@ body {
 
 .mob-menu__soc {
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mob-soc__item:not(:last-child) {
@@ -420,12 +422,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    padding: 200px 452px;
     height: 600px;
   }
 }
@@ -444,7 +446,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    padding: 118px 204px;
     background-image: var(--gradient), url(../images/hero-tab.jpg);
   }
 }
@@ -455,11 +456,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    padding: 200px 452px;
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: var(--gradient), url(../images/hero.jpg);
   }
 }
@@ -706,7 +702,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link:hover {
   background-color: var(--accent-color);
@@ -827,7 +823,6 @@ body {
 .footer-address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .footer-list-item:not(:last-child) {
@@ -886,6 +881,20 @@ body {
   }
 }
 
+.right-col {
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .right-col {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .right-col {
+    margin-right: 94px;
+  }
+}
+
 .footer-title {
   color: var(--primary-bg-color);
   font-weight: 700;
@@ -909,17 +918,14 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.right-col {
-  margin-right: auto;
-}
 @media screen and (min-width: 768px) {
-  .right-col {
-    margin-right: 0;
+  .sub-col {
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .right-col {
-    margin-right: 94px;
+  .sub-col {
+    margin-top: 0;
   }
 }
 
@@ -935,14 +941,7 @@ body {
   font-weight: 700;
   line-height: 1.1428571429;
   text-transform: uppercase;
-  margin-top: 60px;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .sub-title {
-    margin-top: 12px;
-    margin-bottom: 20px;
-  }
 }
 
 .sub-input {
@@ -1018,7 +1017,6 @@ body {
 }
 
 .modal {
-  overflow: scroll;
   background-color: var(--primary-bg-color);
   border-radius: 5px;
   position: absolute;

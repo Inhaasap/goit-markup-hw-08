@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
   height: 60px;
+  display: flex;
 
   @include tablet {
     height: 80px;
@@ -43,7 +44,7 @@
 
 .menu__item {
   @include tablet {
-    padding: 8px 8px;
+    // padding: 8px 8px;
   }
 
   @include desktop {
@@ -106,6 +107,7 @@
   @include tablet {
     display: block;
     margin-right: 0;
+    margin-left: auto;
   }
 
   @include desktop {
@@ -128,9 +130,15 @@
   }
 
   @include tablet {
+    display: flex;
     font-size: 12px;
     line-height: calc(14 / 12);
     margin-right: 15px;
+    align-items: center;
+  &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  
   }
 
   @include desktop {
@@ -143,7 +151,7 @@
 
 .contact__icon {
   fill: currentColor;
-  transform: translateY(-20%);
+  // transform: translateY(-20%);
 
   @include tablet {
     margin-right: 8px;

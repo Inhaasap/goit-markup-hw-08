@@ -100,7 +100,9 @@
 
 .mob-menu__soc {
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  row-gap: 10px;
+
 }
 
 .mob-soc__item:not(:last-child) {
