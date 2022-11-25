@@ -10,13 +10,11 @@
   height: 400px;
 
   @include tablet {
-    padding: 118px 204px;
-    // max-width: 768px;
+    padding: 118px 0;
   }
 
   @include desktop {
-    padding: 200px 452px;
-    // max-width: 1200px;
+    padding: 200px 0px;
     height: 600px;
   }
 }
@@ -33,7 +31,6 @@
   }
 
   @include tablet {
-    // padding: 118px 204px;
     background-image: var(--gradient), url(../images/hero-tab.jpg);
 
     @include retina {
@@ -42,11 +39,8 @@
   }
 
   @include desktop {
-    // padding: 200px 452px;
-    // max-width: 1600px;
-    // height: 600px;
-    // margin-left: auto;
-    // margin-right: auto;
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: var(--gradient), url(../images/hero.jpg);
     @include retina {
       background-image: var(--gradient), url(../images/hero-2x.jpg);
@@ -75,7 +69,7 @@
     font-size: 44px;
     line-height: 1.36;
 
-    // max-width: 696px;
+    width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
     margin: auto;

@@ -420,12 +420,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 452px;
+    padding: 200px 0px;
     height: 600px;
   }
 }
@@ -454,6 +454,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: var(--gradient), url(../images/hero.jpg);
   }
 }
@@ -482,6 +484,7 @@ body {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
     margin: auto;
@@ -816,21 +819,26 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin-right: auto;
   }
 }
 
 .left-col {
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .left-col {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .left-col {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .left-col {
-    margin-right: 94px;
+    margin-right: 70px;
   }
 }
 
