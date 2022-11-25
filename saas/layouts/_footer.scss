@@ -7,6 +7,37 @@
   }
 }
 
+.footer-wrap {
+  @media screen and (max-width: 1199px) {
+  text-align: center;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+
+.tablet-wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+}
+
+.left-col {
+  margin-right: auto;
+
+  @include tablet {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 94px;
+  }
+}
+
 .logo-footer {
   color: var(--accent-color);
   font-family: var(--secondary-fonts);
@@ -53,43 +84,16 @@
   color: var(--accent-color);
 }
 
-.footer-wrap {
-  text-align: center;
-
-  @include desktop {
-    display: flex;
-  }
-}
-
-.tablet-wrap {
-  @include tablet {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-  }
-}
-
-.left-col {
-  margin-right: auto;
-
-  @include tablet {
-    text-align: center;
-    margin-right: 0;
-  }
-
-  @include desktop {
-    margin-right: 94px;
-  }
-}
-
 .right-col {
   margin-right: auto;
+  margin-top: 60px;
 
   @include tablet {
     margin-right: 0;
   }
 
   @include desktop {
+    margin-top: 0;
     margin-right: 94px;
   }
 }
@@ -100,10 +104,6 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 20px;
-
-  @include desktop {
-    margin-top: 12px;
-  }
 }
 
 .team-soc-link:hover,
@@ -117,12 +117,14 @@
 }
 
 .sub-col {
+  margin-top: 60px;
+
   @include tablet {
     margin-top: 60px;
   }
 
   @include desktop {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
