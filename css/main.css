@@ -811,6 +811,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-wrap {
     display: flex;
+    align-items: baseline;
   }
 }
 
